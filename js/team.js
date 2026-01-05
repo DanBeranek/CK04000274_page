@@ -4,6 +4,12 @@ const teamData = [
         role: "Hlavní příjemce",
         members: [
             {
+                name: "Ing. Radek Štefan, Ph.D., PMP, FEng.",
+                position: "Řešitel",
+                image: "assets/img/team/radek_stefan.jpg",
+                link: "https://people.fsv.cvut.cz/~stefarad/"
+            },
+            {
                 name: "doc. Ing. Josef Fládr, Ph.D.",
                 position: "",
                 image: "https://ui-avatars.com/api/?name=Josef+Fládr&background=e7e5e4&color=57534e",
@@ -14,12 +20,6 @@ const teamData = [
                 position: "",
                 image: "https://ui-avatars.com/api/?name=Lukáš+Vráblík&background=e7e5e4&color=57534e",
                 link: "https://people.fsv.cvut.cz/~vrablluk/"
-            },
-            {
-                name: "Ing. Radek Štefan, Ph.D., PMP, FEng.",
-                position: "Hlavní řešitel / manažer",
-                image: "assets/img/team/radek_stefan.jpg",
-                link: "https://people.fsv.cvut.cz/~stefarad/"
             },
             {
                 name: "Ing. Martin Benýšek, Ph.D.",
@@ -37,13 +37,27 @@ const teamData = [
                 position: "",
                 image: "https://ui-avatars.com/api/?name=Roman+Chylík&background=e7e5e4&color=57534e"
             },
-
             {
                 name: "Ing. Jakub Holan, Ph.D.",
                 position: "",
                 image: "https://ui-avatars.com/api/?name=Jakub+Holan&background=e7e5e4&color=57534e",
                 link: "https://people.fsv.cvut.cz/~holanjak/"
             },
+            {
+                name: "Ing. Daniel Beránek",
+                position: "",
+                image: "https://ui-avatars.com/api/?name=Daniel+Beránek&background=e7e5e4&color=57534e",
+                link: "https://beraanek.cz"
+            },
+        ],
+        students: [
+            "Ing. Miroslav Hlaváček",
+            "Ing. Martin Hnyk",
+            "Ing. Pavel Moucha",
+            "Ing. Aneta Teplá",
+            "Ing. Kateřina Michálková",
+            "Ing. Nicole Svobodová",
+            "Ing. Valeriia Kazmina"
         ]
     },
     {
@@ -52,7 +66,7 @@ const teamData = [
         members: [
             {
                 name: "doc. Ing. Petr Kučera, Ph.D.",
-                position: "",
+                position: "Další řešitel",
                 image: "https://ui-avatars.com/api/?name=Petr+Kučera&background=e7e5e4&color=57534e",
                 link: "https://www.vsb.cz/personCards/personCard.jsp?lang=cs&person=k5gYrOLJKNpVA"
             },
@@ -66,12 +80,18 @@ const teamData = [
     },
     {
         organization: "Valbek, spol. s r.o.",
-        role: "Další účastník",
+        role: "Další účastník & interní aplikační garant",
         members: [
             {
                 name: "Ing. Martin Kyselák",
-                position: "",
+                position: "Další řešitel",
                 image: "https://ui-avatars.com/api/?name=Martin+Kyselák&background=e7e5e4&color=57534e"
+            },
+            {
+                name: "doc. Dr. Ing. Roman Lenner",
+                position: "",
+                image: "https://ui-avatars.com/api/?name=Roman+Lenner&background=e7e5e4&color=57534e",
+                link: "https://www.linkedin.com/in/roman-lenner/"
             }
         ]
     },

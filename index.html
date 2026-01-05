@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tunely při požáru | Projekt CK04000274</title>
 
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -47,19 +49,19 @@
 
 <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <a href="#" class="text-xl font-bold tracking-tight text-neutral-900 flex items-center gap-2.5">
-            <div class="w-3 h-3 bg-brand-orange rounded-full shadow-[0_0_10px_rgba(234,88,12,0.5)]"></div>
-            Tunely při požáru
+        <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="text-xl tracking-tight text-neutral-900 flex items-center gap-2 hover:text-brand-orange transition-all">
+            <div class="h-14 w-auto ml-4 flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                <i class="fa-fire fa-solid text-2xl"></i>
+            </div>
+            CK04000274
+            <span class="font-bold">Tunely při požáru</span>
         </a>
 
         <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-neutral-600">
             <a href="#about" class="hover:text-brand-orange transition-colors">O projektu</a>
-            <a href="#results" class="hover:text-brand-orange transition-colors">Výstupy</a>
+            <a href="#results" class="hover:text-brand-orange transition-colors">Výsledky</a>
             <a href="#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a>
             <a href="#publications" class="hover:text-brand-orange transition-colors">Publikace</a>
-            <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-neutral-200 bg-white hover:border-brand-orange hover:text-brand-orange transition-all shadow-sm">
-                CK04000274
-            </a>
         </div>
     </div>
 </nav>
@@ -74,7 +76,7 @@
 
             <div class="flex flex-col items-center gap-3">
                 <div class="flex items-center gap-5 h-10">
-                    <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="block h-full opacity-80 hover:opacity-100 transition duration-300">
+                    <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
                         <img src="assets/img/logos/tacr.svg" alt="TAČR" class="h-full w-auto">
                     </a>
                     <a href="https://www.mdcr.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
@@ -94,7 +96,20 @@
                     </a>
                 </div>
                 <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
-            Hlavní uchazeč
+            Hlavní příjemce
+        </span>
+            </div>
+
+            <div class="hidden xl:block w-px h-12 bg-neutral-200 mb-2"></div>
+
+            <div class="flex flex-col items-center gap-3">
+                <div class="flex items-center gap-6 h-10">
+                    <a href="https://www.fbi.vsb.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/vsb.svg" alt="VŠB-TUO" class="h-full w-auto">
+                    </a>
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
+            Další účastník
         </span>
             </div>
 
@@ -105,12 +120,9 @@
                     <a href="https://www.valbek.cz" target="_blank" rel="noopener noreferrer" class="block h-8 grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
                         <img src="assets/img/logos/valbek.png" alt="Valbek" class="h-full w-auto">
                     </a>
-                    <a href="https://www.fbi.vsb.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
-                        <img src="assets/img/logos/vsb.svg" alt="VŠB-TUO" class="h-full w-auto">
-                    </a>
                 </div>
                 <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
-            Další účastníci
+            Další účastník & Interní aplikační garant
         </span>
             </div>
 
@@ -125,7 +137,7 @@
                         <img src="assets/img/logos/sz.svg" alt="Správa železnic" class="h-full w-auto">
                     </a>
                 </div>
-                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-orange/80 border-t border-orange-100 pt-2 w-full">
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
             Externí aplikační garanti
         </span>
             </div>
@@ -135,10 +147,14 @@
         <div class="flex flex-wrap gap-3 mb-6 text-[11px] font-bold tracking-widest uppercase text-neutral-500">
 
             <a href="https://tacr.gov.cz/program/program-doprava-2020/" target="_blank" rel="noopener noreferrer" class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100 flex items-center gap-2 hover:border-brand-orange hover:text-brand-orange transition-colors">
-                <i class="fa-solid fa-road text-brand-orange"></i> Program DOPRAVA 2020+
+                <i class="fa-solid fa-road text-brand-orange"></i> 4.VS DOPRAVA 2020+
             </a>
 
-            <span class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100">2023–2025</span>
+            <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100 flex items-center gap-2 hover:border-brand-orange hover:text-brand-orange transition-colors">
+                CK04000274 Tunely při požáru
+            </a>
+
+            <span class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100">01/2023–12/2025</span>
         </div>
 
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-neutral-900 tracking-tight mb-8 leading-[1.15]">
@@ -151,16 +167,16 @@
         </h1>
 
         <p class="text-lg md:text-xl text-neutral-600 max-w-2xl mb-10 leading-relaxed font-medium">
-            Spojujeme pokročilé numerické modelování a materiálové inženýrství. Cílem je poskytnout projektantům nástroje pro bezpečnější návrh podzemní infrastruktury.
+            Spojujeme pokročilé numerické modelování a materiálové inženýrství. Cílem je poskytnout specialistům nástroje pro bezpečnější návrh podzemní infrastruktury.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4">
             <a href="#results" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-brand-orange rounded-xl hover:bg-brand-orangeHover hover:shadow-lg hover:shadow-orange-200/50 hover:-translate-y-0.5">
-                Stáhnout výsledky
+                Výsledky
                 <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </a>
             <a href="#about" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-neutral-700 transition-all duration-200 bg-white border border-neutral-200 rounded-xl hover:bg-neutral-50 hover:border-neutral-300">
-                Více informací
+                O projektu
             </a>
         </div>
     </div>
@@ -173,7 +189,7 @@
 
         <div class="prose prose-lg prose-neutral text-neutral-600 leading-relaxed text-justify">
             <p class="mb-6 font-medium text-neutral-800">
-                Hlavním cílem projektu je pomocí výzkumu v oblasti požární bezpečnosti tunelů vytvořit výstupy, které umožní projektantům navrhovat bezpečnější silniční a železniční tunely.
+                Hlavním cílem projektu je pomocí výzkumu v oblasti požární bezpečnosti tunelů vytvořit výstupy, které umožní specialistům navrhovat bezpečnější silniční a železniční tunely.
             </p>
 
             <p class="mb-4">
@@ -194,7 +210,7 @@
 <section id="results" class="py-20 bg-brand-light border-t border-neutral-100">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center max-w-2xl mx-auto mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Hlavní výstupy projektu</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Hlavní výsledky projektu</h2>
         </div>
 
         <div id="results-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -227,42 +243,83 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
 
             <div class="lg:col-span-4 flex flex-col items-start">
-                <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-bold flex items-center gap-3 mb-6 hover:text-brand-orange transition-colors">
-                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-orange to-orange-700 flex items-center justify-center text-white text-xs shadow-lg shadow-orange-900/50">
-                        CK
+                <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="text-white text-xl tracking-tight text-neutral-900 flex items-center gap-2 hover:text-brand-orange transition-all">
+                    <div class="h-14 w-auto flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                        <i class="fa-fire fa-solid text-2xl"></i>
                     </div>
-                    <span>CK04000274</span>
+                    CK04000274
+                    <span class="font-bold">Tunely při požáru</span>
                 </a>
+
                 <p class="text-sm text-neutral-500 leading-relaxed mb-6 max-w-sm">
                     Výzkum a vývoj inovativních metod a materiálů pro navrhování tunelových staveb z hlediska požární bezpečnosti.
                 </p>
-                <div class="flex gap-4">
-                    <a href="mailto:radek.stefan@fsv.cvut.cz" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-500 hover:text-white hover:border-white transition-all">
-                        <i class="fa-solid fa-envelope text-xs"></i>
-                    </a>
-                </div>
             </div>
 
             <div class="lg:col-span-2">
                 <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Menu</h4>
                 <ul class="space-y-3 text-sm">
                     <li><a href="#about" class="hover:text-brand-orange transition-colors">O projektu</a></li>
-                    <li><a href="#results" class="hover:text-brand-orange transition-colors">Výstupy</a></li>
+                    <li><a href="#results" class="hover:text-brand-orange transition-colors">Výsledky</a></li>
                     <li><a href="#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a></li>
                     <li><a href="#publications" class="hover:text-brand-orange transition-colors">Publikace</a></li>
                 </ul>
             </div>
 
             <div class="lg:col-span-3">
-                <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Hlavní řešitel</h4>
-                <ul class="space-y-4 text-sm">
+                <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">
+                    Kontakt
+                </h4>
+
+                <ul class="space-y-2 text-sm">
                     <li class="flex items-start gap-3">
-                        <i class="fa-solid fa-location-dot mt-1 text-neutral-600"></i>
-                        <span>
-                            <strong class="text-neutral-300 block">ČVUT v Praze</strong>
-                            Fakulta stavební<br>
+                        <div class="w-5 flex justify-center">
+                            <i class="fa-solid fa-user mt-1 text-neutral-600"></i>
+                        </div>
+                        <div>
+                            <strong class="text-white block">Radek Štefan</strong>
+                            <span class="text-neutral-400 block leading-tight">
+                                ČVUT v Praze, Fakulta stavební,<br />
+                    Katedra betonových a zděných konstrukcí
+                </span>
+                        </div>
+                    </li>
+
+                    <li class="flex items-start gap-3">
+                        <div class="w-5 flex justify-center">
+                            <i class="fa-solid fa-location-dot mt-1 text-neutral-600"></i>
+                        </div>
+                        <div class="text-neutral-300">
                             Thákurova 7, 166 29 Praha 6
-                        </span>
+                            <span class="block text-neutral-500 text-xs mt-0.5">Místnost B 736</span>
+                        </div>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <div class="w-5 flex justify-center">
+                            <i class="fa-solid fa-envelope text-neutral-600"></i>
+                        </div>
+                        <a href="mailto:radek.stefan@fsv.cvut.cz" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+                            radek.stefan@fsv.cvut.cz
+                        </a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <div class="w-5 flex justify-center">
+                            <i class="fa-solid fa-mobile-screen text-neutral-600"></i>
+                        </div>
+                        <a href="tel:+420775195659" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+                            +420 775 195 659
+                        </a>
+                    </li>
+
+                    <li class="flex items-center gap-3">
+                        <div class="w-5 flex justify-center">
+                            <i class="fa-solid fa-phone text-neutral-600"></i>
+                        </div>
+                        <a href="tel:+420224354450" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+                            +420 224 354 450
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -345,9 +402,14 @@
                                 <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
                                     <i class="${item.icon} text-xl"></i>
                                 </div>
-                                <span class="text-[10px] font-bold uppercase tracking-wider text-neutral-400 border border-neutral-200 px-2 py-1 rounded-md bg-neutral-50">
-                                    ${item.type}
-                                </span>
+                                <div class="flex flex-col items-end gap-1">
+                                    <span class="text-[10px] font-semibold text-brand-orange uppercase tracking-wide">
+                                        ${item.type}
+                                    </span>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border border-neutral-200 px-2 py-1 rounded bg-neutral-50/50">
+                                        ${item.id}
+                                    </span>
+                                </div>
                             </div>
 
                             <h3 class="text-xl font-bold text-neutral-900 mb-3 leading-tight pr-4">
@@ -430,6 +492,19 @@
                         `;
                 });
 
+                // 2. Render Students (Simple List) - Only if they exist
+                let studentsHTML = '';
+                if (group.students && group.students.length > 0) {
+                    studentsHTML = `
+                            <div class="w-full mt-8 pt-6 border-t border-neutral-200/60 flex flex-col items-center">
+                                <h5 class="text-[10px] font-bold tracking-widest text-neutral-400 uppercase mb-3">Zapojení studenti</h5>
+                                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium text-neutral-600">
+                                    ${group.students.map(name => `<span class="hover:text-brand-orange transition-colors cursor-default">${name}</span>`).join('')}
+                                </div>
+                            </div>
+                        `;
+                }
+
                 const groupHTML = `
                         <div class="relative">
                             <div class="flex items-center justify-center gap-4 mb-8">
@@ -443,6 +518,7 @@
                             <div class="flex flex-wrap justify-center gap-6">
                                 ${membersHTML}
                             </div>
+                            ${studentsHTML}
                         </div>
                     `;
                 teamContainer.innerHTML += groupHTML;
@@ -466,7 +542,7 @@
                     if (item.link && item.link.trim() !== "") {
                         // HAS LINK -> Render Button
                         let linkIcon = item.type === 'pdf' ? '<i class="fa-solid fa-file-pdf"></i>' : '<i class="fa-solid fa-external-link-alt"></i>';
-                        let linkText = item.type === 'pdf' ? 'Stáhnout PDF' : 'Zobrazit online';
+                        let linkText = item.type === 'pdf' ? 'Stáhnout PDF' : 'Zobrazit';
 
                         actionHTML = `
                                 <a href="${item.link}" target="_blank" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">

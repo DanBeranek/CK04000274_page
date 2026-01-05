@@ -1,7 +1,7 @@
 const resultsData = [
     {
-        id: "o1",
-        type: "Ostatní výsledky (O1)",
+        id: "CK04000274-V1",
+        type: "Ostatní výsledky (O)",
         title: "Metodika pro modelování požáru v tunelech",
         icon: "fa-solid fa-fire",
         description: "Necertifikovaná metodika obsahující doporučení, kdy lze pro návrh tunelu využít zjednodušené modely požáru a ve kterých případech je nezbytné použít pokročilé CFD simulace.",
@@ -13,7 +13,7 @@ const resultsData = [
         downloadType: "ZIP"
     },
     {
-        id: "r",
+        id: "CK04000274-V2",
         type: "Software (R)",
         title: "Software pro výpočet teplot v nosné konstrukci tunelu při požáru",
         icon: "fa-solid fa-laptop-code",
@@ -27,8 +27,8 @@ const resultsData = [
         downloadType: "ZIP"
     },
     {
-        id: "o3",
-        type: "Ostatní výsledky (O3)",
+        id: "CK04000274-V3",
+        type: "Ostatní výsledky (O)",
         title: "Metodika pro návrh receptury betonu pro nosnou konstrukci tunelu s ohledem na požární odolnost",
         icon: "fa-solid fa-cubes-stacked",
         description: "Soubor doporučení pro návrh vhodných receptur betonů pro nosné konstrukce tunelů z hlediska požární odolnosti.",
