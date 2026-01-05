@@ -277,7 +277,9 @@
                             <i class="fa-solid fa-user mt-1 text-neutral-600"></i>
                         </div>
                         <div>
-                            <strong class="text-white block">Radek Štefan</strong>
+                            <a href="https://people.fsv.cvut.cz/~stefarad/" target="_blank" rel="noopener noreferrer" class="text-white block hover:text-brand-orange transition-colors duration-300">
+                                <strong>Radek Štefan</strong>
+                            </a>
                             <span class="text-neutral-400 block leading-tight">
                                 ČVUT v Praze, Fakulta stavební,<br />
                     Katedra betonových a zděných konstrukcí
@@ -460,7 +462,7 @@
 
                     // 1. Determine Wrapper Tag & Attributes
                     const WrapperTag = hasLink ? 'a' : 'div';
-                    const linkAttrs = hasLink ? `href="${member.link}" target="_blank"` : '';
+                    const linkAttrs = hasLink ? `href="${member.link}" target="_blank" rel="noopener noreferrer"` : '';
 
                     // 2. Interactive Classes (Only if linked)
                     // If linked: Lift up, Shadow, Orange Border on Hover
@@ -477,7 +479,7 @@
                             <${WrapperTag} ${linkAttrs} class="block text-center group w-48 p-4 rounded-xl border border-transparent hover:bg-white transition-all duration-300 ${interactiveClasses}">
 
                                 <div class="w-20 h-20 mx-auto rounded-full ${isExternal ? 'bg-white border border-neutral-200 p-3' : 'bg-neutral-200'} mb-4 overflow-hidden grayscale group-hover:grayscale-0 transition duration-500 border-2 border-transparent group-hover:border-brand-orange shadow-inner">
-                                    <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover ${isExternal ? 'object-contain mix-blend-multiply' : ''}">
+                                    <img src="${member.image}" alt="${member.name}" class="w-full h-full ${isExternal ? 'object-contain mix-blend-multiply' : 'object-cover'}">
                                 </div>
 
                                 <h4 class="font-bold text-neutral-900 text-sm leading-tight group-hover:text-brand-orange transition-colors">
@@ -545,7 +547,7 @@
                         let linkText = item.type === 'pdf' ? 'Stáhnout PDF' : 'Zobrazit';
 
                         actionHTML = `
-                                <a href="${item.link}" target="_blank" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">
+                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">
                                     ${linkIcon} ${linkText}
                                 </a>
                             `;
