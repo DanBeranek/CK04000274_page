@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunely při požáru | Projekt CK04000274</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            dark: '#171717',    /* Neutral 900 */
+                            gray: '#404040',    /* Neutral 700 */
+                            light: '#fafafa',   /* Neutral 50 */
+                            orange: '#ea580c',  /* Deep Orange 600 */
+                            orangeHover: '#c2410c' /* Deep Orange 700 */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(229, 229, 229, 0.6); }
+        .fade-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #fafafa; }
+        ::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a3a3a3; }
+    </style>
+</head>
+<body class="text-neutral-800 bg-white selection:bg-brand-orange selection:text-white">
+
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="#" class="text-xl font-bold tracking-tight text-neutral-900 flex items-center gap-2.5">
+            <div class="w-3 h-3 bg-brand-orange rounded-full shadow-[0_0_10px_rgba(234,88,12,0.5)]"></div>
+            Tunely při požáru
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-neutral-600">
+            <a href="#about" class="hover:text-brand-orange transition-colors">O projektu</a>
+            <a href="#results" class="hover:text-brand-orange transition-colors">Výstupy</a>
+            <a href="#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a>
+            <a href="#publications" class="hover:text-brand-orange transition-colors">Publikace</a>
+            <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-full border border-neutral-200 bg-white hover:border-brand-orange hover:text-brand-orange transition-all shadow-sm">
+                CK04000274
+            </a>
+        </div>
+    </div>
+</nav>
+
+<section class="relative pt-32 pb-20 lg:pt-32 lg:pb-32 overflow-hidden bg-brand-light">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-40"></div>
+    <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-neutral-200 rounded-full blur-3xl opacity-50"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 fade-up" style="animation-delay: 0.1s;">
+
+        <div class="flex flex-wrap justify-center items-end gap-y-8 gap-x-8 mb-10 border-b border-neutral-200/60 pb-8 text-center">
+
+            <div class="flex flex-col items-center gap-3">
+                <div class="flex items-center gap-5 h-10">
+                    <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="block h-full opacity-80 hover:opacity-100 transition duration-300">
+                        <img src="assets/img/logos/tacr.svg" alt="TAČR" class="h-full w-auto">
+                    </a>
+                    <a href="https://www.mdcr.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/mdcr.png" alt="MDČR" class="h-full w-auto">
+                    </a>
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">Poskytovatel podpory
+        </span>
+            </div>
+
+            <div class="hidden xl:block w-px h-12 bg-neutral-200 mb-2"></div>
+
+            <div class="flex flex-col items-center gap-3">
+                <div class="h-10 flex items-center">
+                    <a href="https://www.fsv.cvut.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/cvut.svg" alt="ČVUT v Praze" class="h-full w-auto">
+                    </a>
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
+            Hlavní uchazeč
+        </span>
+            </div>
+
+            <div class="hidden xl:block w-px h-12 bg-neutral-200 mb-2"></div>
+
+            <div class="flex flex-col items-center gap-3">
+                <div class="flex items-center gap-6 h-10">
+                    <a href="https://www.valbek.cz" target="_blank" rel="noopener noreferrer" class="block h-8 grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/valbek.png" alt="Valbek" class="h-full w-auto">
+                    </a>
+                    <a href="https://www.fbi.vsb.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/vsb.svg" alt="VŠB-TUO" class="h-full w-auto">
+                    </a>
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-neutral-400 border-t border-neutral-100 pt-2 w-full">
+            Další účastníci
+        </span>
+            </div>
+
+            <div class="hidden xl:block w-px h-12 bg-neutral-200 mb-2"></div>
+
+            <div class="flex flex-col items-center gap-3">
+                <div class="flex items-center gap-6 h-10">
+                    <a href="https://www.rsd.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/rsd.svg" alt="ŘSD" class="h-full w-auto">
+                    </a>
+                    <a href="https://www.spravazeleznic.cz" target="_blank" rel="noopener noreferrer" class="block h-full grayscale hover:grayscale-0 transition duration-300 opacity-80 hover:opacity-100">
+                        <img src="assets/img/logos/sz.svg" alt="Správa železnic" class="h-full w-auto">
+                    </a>
+                </div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-orange/80 border-t border-orange-100 pt-2 w-full">
+            Externí aplikační garanti
+        </span>
+            </div>
+
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-6 text-[11px] font-bold tracking-widest uppercase text-neutral-500">
+
+            <a href="https://tacr.gov.cz/program/program-doprava-2020/" target="_blank" rel="noopener noreferrer" class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100 flex items-center gap-2 hover:border-brand-orange hover:text-brand-orange transition-colors">
+                <i class="fa-solid fa-road text-brand-orange"></i> Program DOPRAVA 2020+
+            </a>
+
+            <span class="bg-white px-3 py-1.5 rounded-md shadow-sm border border-neutral-100">2023–2025</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-neutral-900 tracking-tight mb-8 leading-[1.15]">
+            Výzkum a vývoj inovativních metod <br class="hidden xl:block" />
+            a materiálů pro navrhování <br class="hidden xl:block" />
+            tunelových staveb
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-orange-400 block mt-1 md:mt-0 md:inline">
+        z hlediska požární bezpečnosti
+    </span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-neutral-600 max-w-2xl mb-10 leading-relaxed font-medium">
+            Spojujeme pokročilé numerické modelování a materiálové inženýrství. Cílem je poskytnout projektantům nástroje pro bezpečnější návrh podzemní infrastruktury.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#results" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-brand-orange rounded-xl hover:bg-brand-orangeHover hover:shadow-lg hover:shadow-orange-200/50 hover:-translate-y-0.5">
+                Stáhnout výsledky
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+            <a href="#about" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-neutral-700 transition-all duration-200 bg-white border border-neutral-200 rounded-xl hover:bg-neutral-50 hover:border-neutral-300">
+                Více informací
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="py-20 bg-white border-t border-neutral-100">
+    <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-xs font-bold tracking-widest text-brand-orange uppercase mb-4">Anotace projektu</h2>
+        <h3 class="text-3xl font-bold text-neutral-900 mb-8 leading-tight">Cíle a zaměření výzkumu</h3>
+
+        <div class="prose prose-lg prose-neutral text-neutral-600 leading-relaxed text-justify">
+            <p class="mb-6 font-medium text-neutral-800">
+                Hlavním cílem projektu je pomocí výzkumu v oblasti požární bezpečnosti tunelů vytvořit výstupy, které umožní projektantům navrhovat bezpečnější silniční a železniční tunely.
+            </p>
+
+            <p class="mb-4">
+                <strong class="text-neutral-900">Prvním cílem</strong> je pomocí parametrické studie v oblasti pokročilého modelování požárů vytvořit metodiku popisující, kdy lze modelovat požáry zjednodušeně, a kdy a jak modelovat požáry pomocí pokročilých modelů.
+            </p>
+
+            <p class="mb-4">
+                <strong class="text-neutral-900">Druhým cílem</strong> je vyvinout uživatelsky přívětivý software pro stanovení teplot v konstrukci tunelu při požáru, a poskytnout tak nástroj pro přesnější návrh konstrukcí tunelů.
+            </p>
+
+            <p>
+                <strong class="text-neutral-900">Třetím cílem</strong> je na základě provedení a vyhodnocení požárních experimentů vytvořit metodiku obsahující doporučení pro návrh vhodných receptur betonu pro nosné konstrukce tunelů z hlediska požární odolnosti a příklady těchto receptur.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="results" class="py-20 bg-brand-light border-t border-neutral-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">Hlavní výstupy projektu</h2>
+        </div>
+
+        <div id="results-container" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        </div>
+    </div>
+</section>
+
+<section id="team" class="py-20 bg-white border-t border-neutral-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-center text-3xl font-bold text-neutral-900 mb-16">Řešitelský tým</h2>
+        <div id="team-container" class="space-y-20"></div>
+    </div>
+</section>
+
+<section id="publications" class="py-20 bg-brand-light border-t border-neutral-100">
+    <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-center text-3xl font-bold text-neutral-900 mb-4">Publikační činnost</h2>
+        <p class="text-center text-neutral-500 font-medium mb-12">Přehled odborných článků, konferenčních příspěvků a kvalifikačních prací.</p>
+
+        <div id="publications-container" class="space-y-12">
+        </div>
+    </div>
+</section>
+
+<footer id="funding" class="bg-neutral-950 text-neutral-400 border-t border-neutral-900 relative overflow-hidden font-sans">
+
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-orange via-orange-900 to-transparent opacity-80"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-16 lg:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+
+            <div class="lg:col-span-4 flex flex-col items-start">
+                <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="text-white text-xl font-bold flex items-center gap-3 mb-6 hover:text-brand-orange transition-colors">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-orange to-orange-700 flex items-center justify-center text-white text-xs shadow-lg shadow-orange-900/50">
+                        CK
+                    </div>
+                    <span>CK04000274</span>
+                </a>
+                <p class="text-sm text-neutral-500 leading-relaxed mb-6 max-w-sm">
+                    Výzkum a vývoj inovativních metod a materiálů pro navrhování tunelových staveb z hlediska požární bezpečnosti.
+                </p>
+                <div class="flex gap-4">
+                    <a href="mailto:radek.stefan@fsv.cvut.cz" class="w-8 h-8 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center text-neutral-500 hover:text-white hover:border-white transition-all">
+                        <i class="fa-solid fa-envelope text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-2">
+                <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Menu</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#about" class="hover:text-brand-orange transition-colors">O projektu</a></li>
+                    <li><a href="#results" class="hover:text-brand-orange transition-colors">Výstupy</a></li>
+                    <li><a href="#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a></li>
+                    <li><a href="#publications" class="hover:text-brand-orange transition-colors">Publikace</a></li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Hlavní řešitel</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-location-dot mt-1 text-neutral-600"></i>
+                        <span>
+                            <strong class="text-neutral-300 block">ČVUT v Praze</strong>
+                            Fakulta stavební<br>
+                            Thákurova 7, 166 29 Praha 6
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-3">
+                <div class="bg-neutral-900/30 border border-neutral-800 p-6 rounded-2xl relative hover:border-brand-orange/30 transition-colors">
+                    <div class="absolute -top-3 left-4 bg-neutral-950 px-2 text-[10px] font-bold uppercase tracking-widest text-brand-orange">
+                        Podpora
+                    </div>
+                    <p class="text-sm text-neutral-300 leading-relaxed font-medium">
+                        Tento projekt je financován se státní podporou
+                        <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-200">
+                            Technologické agentury ČR
+                        </a>
+                        a
+                        <a href="https://www.mdcr.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-200">
+                            Ministerstva dopravy ČR
+                        </a>
+                        v rámci
+                        <a href="https://tacr.gov.cz/program/program-doprava-2020/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-brand-orange underline decoration-neutral-700 underline-offset-4 hover:decoration-brand-orange transition-all">
+                            Programu DOPRAVA 2020+
+                        </a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-neutral-600">
+            <p>
+                &copy; <span id="current-year"></span>
+                <a href="https://www.fsv.cvut.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+                    České vysoké učení technické v Praze
+                </a>.
+            </p>
+            <div class="flex gap-6">
+                <a href="https://www.fbi.vsb.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+                    VŠB-TUO
+                </a>
+                <a href="https://www.valbek.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+                    Valbek, spol. s .r.o.
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/team.js"></script>
+<script src="js/publications.js"></script>
+<script src="js/results.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // --- 1. RENDER RESULTS (Updated for No-Modal) ---
+        const resultsContainer = document.getElementById('results-container');
+
+        if(typeof resultsData !== 'undefined') {
+            resultsContainer.innerHTML = ''; // Clear contents
+
+            resultsData.forEach(item => {
+                // Generate list of features
+                let featuresHTML = '';
+                item.features.forEach(feature => {
+                    featuresHTML += `
+                            <li class="flex items-start gap-2 text-sm text-neutral-600">
+                                <i class="fa-solid fa-check text-brand-orange mt-1 text-xs"></i>
+                                <span>${feature}</span>
+                            </li>
+                        `;
+                });
+
+                const html = `
+                        <div class="group bg-white rounded-2xl p-8 border border-neutral-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+                            <div class="absolute top-0 left-0 w-full h-1 bg-brand-orange scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+
+                            <div class="flex justify-between items-start mb-6">
+                                <div class="w-14 h-14 bg-orange-50 rounded-2xl flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+                                    <i class="${item.icon} text-xl"></i>
+                                </div>
+                                <span class="text-[10px] font-bold uppercase tracking-wider text-neutral-400 border border-neutral-200 px-2 py-1 rounded-md bg-neutral-50">
+                                    ${item.type}
+                                </span>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-neutral-900 mb-3 leading-tight pr-4">
+                                ${item.title}
+                            </h3>
+
+                            <p class="text-neutral-500 leading-relaxed text-sm mb-6">
+                                ${item.description}
+                            </p>
+
+                            <div class="bg-neutral-50 rounded-xl p-4 mb-8 border border-neutral-100">
+                                <ul class="space-y-2">
+                                    ${featuresHTML}
+                                </ul>
+                            </div>
+
+                            <div class="mt-auto">
+                                <a href="${item.downloadLink}" class="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-neutral-900 hover:bg-brand-orange rounded-xl transition-colors duration-300 shadow-sm group-hover:shadow-md">
+                                    <i class="fa-solid fa-download mr-2"></i> Stáhnout
+                                </a>
+                            </div>
+                        </div>
+                    `;
+                resultsContainer.innerHTML += html;
+            });
+        }
+
+        // --- 2. Render Team & Pubs (Standard) ---
+        renderTeam();
+        renderPubs();
+    });
+
+    // ... Keep renderTeam() and renderPubs() functions exactly as before ...
+    // ... (I will include them below just in case you need the full block) ...
+
+    function renderTeam() {
+        const teamContainer = document.getElementById('team-container');
+
+        if(teamContainer && typeof teamData !== 'undefined') {
+            teamContainer.innerHTML = '';
+
+            teamData.forEach(group => {
+                const isExternal = group.isExternal;
+                let membersHTML = '';
+
+                group.members.forEach(member => {
+                    const hasLink = member.link && member.link.trim() !== "";
+
+                    // 1. Determine Wrapper Tag & Attributes
+                    const WrapperTag = hasLink ? 'a' : 'div';
+                    const linkAttrs = hasLink ? `href="${member.link}" target="_blank"` : '';
+
+                    // 2. Interactive Classes (Only if linked)
+                    // If linked: Lift up, Shadow, Orange Border on Hover
+                    const interactiveClasses = hasLink
+                        ? 'hover:-translate-y-1 hover:shadow-lg hover:border-brand-orange/30 cursor-pointer'
+                        : '';
+
+                    // 3. Visual Hint (Globe Icon) - Only if linked
+                    const iconHTML = hasLink
+                        ? `<div class="mt-3 text-neutral-300 group-hover:text-brand-orange transition-colors"><i class="fa-solid fa-globe text-sm"></i></div>`
+                        : '';
+
+                    membersHTML += `
+                            <${WrapperTag} ${linkAttrs} class="block text-center group w-48 p-4 rounded-xl border border-transparent hover:bg-white transition-all duration-300 ${interactiveClasses}">
+
+                                <div class="w-20 h-20 mx-auto rounded-full ${isExternal ? 'bg-white border border-neutral-200 p-3' : 'bg-neutral-200'} mb-4 overflow-hidden grayscale group-hover:grayscale-0 transition duration-500 border-2 border-transparent group-hover:border-brand-orange shadow-inner">
+                                    <img src="${member.image}" alt="${member.name}" class="w-full h-full object-cover ${isExternal ? 'object-contain mix-blend-multiply' : ''}">
+                                </div>
+
+                                <h4 class="font-bold text-neutral-900 text-sm leading-tight group-hover:text-brand-orange transition-colors">
+                                    ${member.name}
+                                </h4>
+
+                                ${!isExternal ? `<p class="text-[10px] text-neutral-400 font-bold uppercase tracking-wider">${member.position}</p>` : ''}
+
+                                ${iconHTML}
+
+                            </${WrapperTag}>
+                        `;
+                });
+
+                const groupHTML = `
+                        <div class="relative">
+                            <div class="flex items-center justify-center gap-4 mb-8">
+                                <div class="h-px bg-neutral-200 w-12"></div>
+                                <div class="text-center">
+                                    <h3 class="text-lg font-bold text-neutral-800">${group.organization}</h3>
+                                    <p class="text-[10px] text-brand-orange uppercase tracking-widest font-bold mt-1">${group.role}</p>
+                                </div>
+                                <div class="h-px bg-neutral-200 w-12"></div>
+                            </div>
+                            <div class="flex flex-wrap justify-center gap-6">
+                                ${membersHTML}
+                            </div>
+                        </div>
+                    `;
+                teamContainer.innerHTML += groupHTML;
+            });
+        }
+    }
+
+    function renderPubs() {
+        const pubContainer = document.getElementById('publications-container');
+
+        if(pubContainer && typeof publicationsData !== 'undefined') {
+            pubContainer.innerHTML = ''; // Clear first
+
+            publicationsData.forEach(section => {
+                let itemsHTML = '';
+
+                section.items.forEach(item => {
+                    let actionHTML = '';
+
+                    // LOGIC: Check if link exists
+                    if (item.link && item.link.trim() !== "") {
+                        // HAS LINK -> Render Button
+                        let linkIcon = item.type === 'pdf' ? '<i class="fa-solid fa-file-pdf"></i>' : '<i class="fa-solid fa-external-link-alt"></i>';
+                        let linkText = item.type === 'pdf' ? 'Stáhnout PDF' : 'Zobrazit online';
+
+                        actionHTML = `
+                                <a href="${item.link}" target="_blank" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">
+                                    ${linkIcon} ${linkText}
+                                </a>
+                            `;
+                    } else {
+                        // NO LINK -> Render Status Badge
+                        // Use customStatus if defined, otherwise default to "Nedostupné online"
+                        let statusText = item.customStatus || "Pouze citace";
+
+                        actionHTML = `
+                                <span class="shrink-0 px-3 py-1.5 bg-neutral-100 text-neutral-400 text-[11px] font-bold rounded-md border border-neutral-200 cursor-default select-none">
+                                    ${statusText}
+                                </span>
+                            `;
+                    }
+
+                    itemsHTML += `
+                            <div class="bg-white p-5 rounded-xl border border-neutral-100 hover:border-brand-orange/30 hover:shadow-md transition-all duration-200 flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center">
+                                <div>
+                                    <h4 class="font-bold text-neutral-800 text-base leading-snug">${item.title}</h4>
+                                    <p class="text-sm text-neutral-500 mt-1">
+                                        <span class="font-semibold text-neutral-600">${item.authors}</span>
+                                        <span class="mx-1">•</span>
+                                        ${item.source}
+                                    </p>
+                                </div>
+                                ${actionHTML}
+                            </div>
+                        `;
+                });
+
+                const sectionHTML = `
+                        <div>
+                            <div class="flex items-center gap-3 mb-6 border-b border-neutral-200 pb-2">
+                                <div class="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center text-brand-orange">
+                                    <i class="${section.icon}"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-neutral-900">${section.category}</h3>
+                            </div>
+                            <div class="space-y-3">
+                                ${itemsHTML}
+                            </div>
+                        </div>
+                    `;
+                pubContainer.innerHTML += sectionHTML;
+            });
+        }
+    }
+</script>
+</body>
+</html>
