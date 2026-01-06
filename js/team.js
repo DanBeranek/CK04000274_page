@@ -5,7 +5,7 @@ const teamData = [
         members: [
             {
                 name: "Ing. Radek Štefan, Ph.D., PMP, FEng.",
-                position: "Řešitel",
+                position: "Hlavní řešitel / manažer",
                 image: "assets/img/team/radek_stefan.jpg",
                 link: "https://people.fsv.cvut.cz/~stefarad/"
             },
@@ -51,13 +51,15 @@ const teamData = [
             },
         ],
         students: [
-            "Ing. Miroslav Hlaváček",
-            "Ing. Martin Hnyk",
-            "Ing. Pavel Moucha",
-            "Ing. Aneta Teplá",
-            "Ing. Kateřina Michálková",
-            "Ing. Nicole Svobodová",
-            "Ing. Valeriia Kazmina"
+            "Tereza Bělohradská",
+            "Nicole Dvořáková (Svobodová)",
+            "Miroslav Hlaváček",
+            "Martin Hnyk",
+            "Valeriia Kazmina",
+            "Anna Lisová",
+            "Kateřina Michálková",
+            "Pavel Moucha",
+            "Aneta Teplá",
         ]
     },
     {
@@ -92,6 +94,16 @@ const teamData = [
                 position: "",
                 image: "https://ui-avatars.com/api/?name=Roman+Lenner&background=e7e5e4&color=57534e",
                 link: "https://www.linkedin.com/in/roman-lenner/"
+            },
+            {
+                name: "Ing. Tomáš Parák, Ph.D.",
+                position: "",
+                image: "https://ui-avatars.com/api/?name=Tomáš+Parák&background=e7e5e4&color=57534e",
+            },
+            {
+                name: "Ing. Vojtěch Boltnar",
+                position: "",
+                image: "https://ui-avatars.com/api/?name=Vojtěch+Boltnar&background=e7e5e4&color=57534e",
             }
         ]
     },

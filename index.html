@@ -280,10 +280,14 @@
                             <a href="https://people.fsv.cvut.cz/~stefarad/" target="_blank" rel="noopener noreferrer" class="text-white block hover:text-brand-orange transition-colors duration-300">
                                 <strong>Radek Štefan</strong>
                             </a>
-                            <span class="text-neutral-400 block leading-tight">
-                                ČVUT v Praze, Fakulta stavební,<br />
-                    Katedra betonových a zděných konstrukcí
-                </span>
+                            <span class="inline-block">
+    <a href="https://www.cvut.cz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-300">ČVUT v Praze</a>,
+    <a href="https://www.fsv.cvut.cz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-300">Fakulta stavební</a>,
+</span>
+
+                            <a href="https://concrete.fsv.cvut.cz/" target="_blank" rel="noopener noreferrer" class="block mt-1 hover:text-brand-orange transition-colors duration-300">
+                                Katedra betonových a zděných konstrukcí
+                            </a>
                         </div>
                     </li>
 
@@ -543,11 +547,11 @@
                     // LOGIC: Check if link exists
                     if (item.link && item.link.trim() !== "") {
                         // HAS LINK -> Render Button
-                        let linkIcon = item.type === 'pdf' ? '<i class="fa-solid fa-file-pdf"></i>' : '<i class="fa-solid fa-external-link-alt"></i>';
-                        let linkText = item.type === 'pdf' ? 'Stáhnout PDF' : 'Zobrazit';
+                        let linkIcon = item.type === 'pdf' ? '<i class="fa-solid fa-eye"></i>' : '<i class="fa-solid fa-external-link-alt"></i>';
+                        let linkText = item.type === 'pdf' ? 'Zobrazit' : 'Zobrazit';
 
                         actionHTML = `
-                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">
+                                <a href="${item.link}" target="_blank" rel="noopener noreferrer" type="${item.type === 'pdf' ? 'application/pdf' : ''}" class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-50 hover:bg-brand-orange hover:text-white text-neutral-600 text-xs font-bold rounded-lg transition-colors duration-200 border border-neutral-200 hover:border-brand-orange">
                                     ${linkIcon} ${linkText}
                                 </a>
                             `;

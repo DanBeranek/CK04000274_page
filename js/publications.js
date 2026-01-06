@@ -3,7 +3,13 @@ const publicationsData = [
         category: "Články v odborných časopisech",
         icon: "fa-regular fa-newspaper", // FontAwesome icon class
         items: [
-
+            {
+                title: "Novel borehole method for measuring vapour pressure in concrete exposed to high temperatures",
+                authors: "Chylík, R.; Štefan, R.; Holan, J.",
+                source: "Submitted",
+                link: "assets/files/2025_Chylik_et_al.pdf",
+                type: "pdf"
+            },
         ]
     },
     {
@@ -11,18 +17,25 @@ const publicationsData = [
         icon: "fa-solid fa-users-rectangle",
         items: [
             {
-                title: "Analýza vlivu nuceného větrání na průběh požáru v silničním tunelu s využitím zónových modelů požáru",
+                title: "Využití matematického modelování požáru při posuzování požární odolnosti v tunelech",
                 authors: "Svobodová, N.",
-                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2023. Praha: CTU FCE, 2023. p. 17-22. ISBN 978-80-01-07137-3.",
-                link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2023/pdf/Svobodova_Nicole.pdf",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2024. Praha: CTU FCE, 2023. p. 73-76. ISBN 978-80-01-07295-0.",
+                link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2024/pdf/Svobodova_Nicole.pdf",
                 type: "link"
             },
             {
                 title: "Analysis of the mechanical ventilation effect on the smoke layer height evolution in a road tunnel using a fire zone model",
                 authors: "Svobodová, N.; Benýšek, M.; Štefan, R.; Novák, J.",
-                source: "Požární ochrana 2023: recenzovaný zborník abstraktů XXXII. ročníku mezinárodní konference. 6. - 7. září 2023, Ostrava. Ostrava: Sdružení požárního a bezpečnostního inženýrství, z.s., 2023. p. 59-61. ISBN 978-80-7385-267-2.",
-                link: "",
-                customStatus: "Není k dispozici"
+                source: "Požární ochrana 2023: recenzovaný sborník abstraktů XXXII. ročníku mezinárodní konference. 6. - 7. září 2023, Ostrava. Ostrava: Sdružení požárního a bezpečnostního inženýrství, z.s., 2023. p. 59-61. ISBN 978-80-7385-267-2.",
+                link: "assets/files/2023_Svobodova_et_al.pdf",
+                type: "pdf"
+            },
+            {
+                title: "Analýza vlivu nuceného větrání na průběh požáru v silničním tunelu s využitím zónových modelů požáru",
+                authors: "Svobodová, N.",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2023. Praha: CTU FCE, 2023. p. 64-69. ISBN 978-80-01-07137-3.",
+                link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2023/pdf/Svobodova_Nicole.pdf",
+                type: "link"
             },
         ]
     },
@@ -31,17 +44,17 @@ const publicationsData = [
         icon: "fa-solid fa-graduation-cap",
         items: [
             {
-                title: "Modelování požáru v tunelech pomocí zjednodušených a zpřesněných modelů požáru",
-                authors: "Hlaváček, M.",
-                source: "Diplomová práce. Vedoucí M. Benýšek. ČVUT v Praze, 2024.",
-                link: "https://dspace.cvut.cz/entities/publication/7cbea68e-906e-40dc-b248-c4be83a6649a",
-                type: "link"
+                title: "Experimentální a numerická analýza různých druhů betonu tunelových ostění vystavených požáru",
+                authors: "Lisová, A.",
+                source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2026.",
+                link: "https://dspace.cvut.cz/entities/publication/9586c5c9-9b52-435f-acda-dd5eb29b0011",
+                type: "pdf"
             },
             {
-                title: "Materiálové řešení betonových tunelových ostění s ohledem na požární odolnost",
-                authors: "Hnyk, M.",
-                source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2024.",
-                link: "https://dspace.cvut.cz/entities/publication/1955c45a-6508-4f34-bd7c-13c00230afb8",
+                title: "Analýza chování betonu pro tunelová ostění za vysokých teplot",
+                authors: "Michálková, K.",
+                source: "Diplomová práce. Vedoucí J. Fládr. ČVUT v Praze, 2025.",
+                link: "https://dspace.cvut.cz/entities/publication/9586c5c9-9b52-435f-acda-dd5eb29b0011",
                 type: "link"
             },
             {
@@ -59,12 +72,26 @@ const publicationsData = [
                 type: "link"
             },
             {
-                title: "Analýza chování betonu pro tunelová ostění za vysokých teplot",
-                authors: "Michálková, K.",
-                source: "Diplomová práce. Vedoucí J. Fládr. ČVUT v Praze, 2025.",
-                link: "https://dspace.cvut.cz/entities/publication/9586c5c9-9b52-435f-acda-dd5eb29b0011",
+                title: "Modelování požáru v tunelech pomocí zjednodušených a zpřesněných modelů požáru",
+                authors: "Hlaváček, M.",
+                source: "Diplomová práce. Vedoucí M. Benýšek. ČVUT v Praze, 2024.",
+                link: "https://dspace.cvut.cz/entities/publication/7cbea68e-906e-40dc-b248-c4be83a6649a",
                 type: "link"
-            }
+            },
+            {
+                title: "Materiálové řešení betonových tunelových ostění s ohledem na požární odolnost",
+                authors: "Hnyk, M.",
+                source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2024.",
+                link: "https://dspace.cvut.cz/entities/publication/1955c45a-6508-4f34-bd7c-13c00230afb8",
+                type: "link"
+            },
+            {
+                title: "Modelování požáru a analýza elektrovozidel při návrhu konstrukcí",
+                authors: "Bělohradská, T.",
+                source: "Diplomová práce. Vedoucí M. Benýšek. ČVUT v Praze, 2023.",
+                link: "https://dspace.cvut.cz/entities/publication/04f39a9d-2068-4558-bb8e-158b5331a7d4",
+                type: "link"
+            },
         ]
     }
 ];
