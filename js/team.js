@@ -73,9 +73,9 @@ const teamData = [
                 link: "https://www.vsb.cz/personCards/personCard.jsp?lang=cs&person=k5gYrOLJKNpVA"
             },
             {
-                name: "Ing. Adam Thomizcek, Ph.D.",
+                name: "Ing. Adam Thomitzek, Ph.D.",
                 position: "",
-                image: "https://ui-avatars.com/api/?name=Adam+Thomizcek&background=e7e5e4&color=57534e",
+                image: "https://ui-avatars.com/api/?name=Adam+Thomitzek&background=e7e5e4&color=57534e",
                 link: "https://www.vsb.cz/personCards/personCard.jsp?lang=cs&person=k5gnjR9mW1GNo"
             }
         ]
