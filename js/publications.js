@@ -19,7 +19,7 @@ const publicationsData = [
             {
                 title: "Využití matematického modelování požáru při posuzování požární odolnosti v tunelech",
                 authors: "Svobodová, N.",
-                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2024. Praha: CTU FCE, 2023. p. 73-76. ISBN 978-80-01-07295-0.",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2024. Praha: CTU FCE, 2024. p. 73-76. ISBN 978-80-01-07295-0.",
                 link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2024/pdf/Svobodova_Nicole.pdf",
                 type: "link"
             },
