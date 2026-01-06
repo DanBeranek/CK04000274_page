@@ -47,7 +47,7 @@ const publicationsData = [
                 title: "Experimentální a numerická analýza různých druhů betonu tunelových ostění vystavených požáru",
                 authors: "Lisová, A.",
                 source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2026.",
-                link: "https://dspace.cvut.cz/entities/publication/9586c5c9-9b52-435f-acda-dd5eb29b0011",
+                link: "assets/files/2026_Lisova.pdf",
                 type: "pdf"
             },
             {
