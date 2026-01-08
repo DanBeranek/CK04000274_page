@@ -558,11 +558,11 @@
                     } else {
                         // NO LINK -> Render Status Badge
                         // Use customStatus if defined, otherwise default to "Nedostupné online"
-                        let statusText = item.customStatus || "Pouze citace";
+                        let statusText = item.customStatus || "Zobrazit";
 
                         actionHTML = `
-                                <span class="shrink-0 px-3 py-1.5 bg-neutral-100 text-neutral-400 text-[11px] font-bold rounded-md border border-neutral-200 cursor-default select-none">
-                                    ${statusText}
+                                <span class="shrink-0 flex items-center gap-2 px-4 py-2 bg-neutral-100 text-neutral-400 text-xs font-bold rounded-lg border border-neutral-200 cursor-default select-none">
+                                    <i class="fa-solid fa-eye"></i>${statusText}
                                 </span>
                             `;
                     }

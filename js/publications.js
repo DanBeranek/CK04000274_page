@@ -11,10 +11,17 @@ const publicationsData = [
                 type: "pdf"
             },
             {
-                title: "An indicative small-scale screening method for assessing fire-induced spalling propensity of concrete under uniaxial compression and restrained in-plane deformation",
+                title: "Novel indicative small-scale screening method for assessing fire-induced spalling propensity of concrete under uniaxial compression and restrained in-plane deformation",
                 authors: "Chylík, R.; Štefan, R.; Holan, J.; Fládr J.",
                 source: "Submitted",
-                link: "assets/files/2025_Chylik_et_al_2.pdf",
+                link: "",
+                type: "pdf"
+            },
+            {
+                title: "Applicability of Zone Fire Models for Tunnel Fire Modelling: Effect of Spatial Segmentation and Comparison with CFD Models",
+                authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
+                source: "Submitted",
+                link: "assets/files/2025_Dvorakova_et_al.pdf",
                 type: "pdf"
             },
         ]
@@ -23,6 +30,15 @@ const publicationsData = [
         category: "Konferenční příspěvky",
         icon: "fa-solid fa-users-rectangle",
         items: [
+            {
+                title: "Požární bezpečnost silničních tunelů se zaměřením na modelování požáru",
+                authors: "Moucha, P.",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2025. Praha: CTU FCE, 2025. p. 68-72. ISBN 978-80-01-07416-9.",
+                // link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2025/pdf/Moucha_Pavel.pdf",
+                // type: "link"
+                link: "assets/files/Moucha_Pavel.pdf",
+                type: "pdf"
+            },
             {
                 title: "Využití matematického modelování požáru při posuzování požární odolnosti v tunelech",
                 authors: "Svobodová, N.",
