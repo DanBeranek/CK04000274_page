@@ -4,10 +4,10 @@ const publicationsData = [
         icon: "fa-regular fa-newspaper", // FontAwesome icon class
         items: [
             {
-                title: "Novel borehole method for measuring vapour pressure in concrete exposed to high temperatures",
-                authors: "Chylík, R.; Štefan, R.; Holan, J.",
+                title: "Applicability of Zone Fire Models for Tunnel Fire Modelling: Effect of Spatial Segmentation and Comparison with CFD Models",
+                authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
                 source: "Submitted",
-                link: "assets/files/2025_Chylik_et_al.pdf",
+                link: "assets/files/2025_Dvorakova_et_al.pdf",
                 type: "pdf"
             },
             {
@@ -18,10 +18,10 @@ const publicationsData = [
                 type: "pdf"
             },
             {
-                title: "Applicability of Zone Fire Models for Tunnel Fire Modelling: Effect of Spatial Segmentation and Comparison with CFD Models",
-                authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
+                title: "Novel borehole method for measuring vapour pressure in concrete exposed to high temperatures",
+                authors: "Chylík, R.; Štefan, R.; Holan, J.",
                 source: "Submitted",
-                link: "assets/files/2025_Dvorakova_et_al.pdf",
+                link: "assets/files/2025_Chylik_et_al.pdf",
                 type: "pdf"
             },
         ]
