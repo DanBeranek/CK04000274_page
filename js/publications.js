@@ -7,7 +7,8 @@ const publicationsData = [
                 title: "Applicability of zone fire models for tunnel fire modelling: Effect of spatial segmentation and comparison with CFD models",
                 authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
                 source: "Submitted",
-                link: "assets/files/2025_Dvorakova_et_al.pdf",
+                // link: "assets/files/2025_Dvorakova_et_al.pdf",
+                link: "",
                 type: "pdf"
             },
             {
@@ -39,6 +40,14 @@ const publicationsData = [
                 link: "assets/files/Moucha_Pavel.pdf",
                 type: "pdf"
             },
+
+            {
+                title: "Požární bezpečnost silničních tunelů se zaměřením na větrání",
+                authors: "Moucha, P.; Benýšek, M.",
+                source: "Požární ochrana 2024: Recenzovaný Sborník abstraktů XXXIII. ročníku mezinárodní konference. 4. - 5. září 2024, Ostrava. Ostrava: Sdružení požárního a bezpečnostního inženýrství, z.s., 2024. p. 66-68. ISBN 978-80-7385-274-0.",
+                link: "https://m.spbi.cz/documents/5%20PO/2024/Abstrakty%20PO2024.pdf#page=74",
+                type: "link"
+            },
             {
                 title: "Využití matematického modelování požáru při posuzování požární odolnosti v tunelech",
                 authors: "Svobodová, N.",
@@ -51,7 +60,7 @@ const publicationsData = [
             {
                 title: "Analysis of the mechanical ventilation effect on the smoke layer height evolution in a road tunnel using a fire zone model",
                 authors: "Svobodová, N.; Benýšek, M.; Štefan, R.; Novák, J.",
-                source: "Požární ochrana 2023: recenzovaný sborník abstraktů XXXII. ročníku mezinárodní konference. 6. - 7. září 2023, Ostrava. Ostrava: Sdružení požárního a bezpečnostního inženýrství, z.s., 2023. p. 59-61. ISBN 978-80-7385-267-2.",
+                source: "Požární ochrana 2023: Recenzovaný Sborník abstraktů XXXII. ročníku mezinárodní konference. 6. - 7. září 2023, Ostrava. Ostrava: Sdružení požárního a bezpečnostního inženýrství, z.s., 2023. p. 59-61. ISBN 978-80-7385-267-2.",
                 link: "assets/files/2023_Svobodova_et_al.pdf",
                 type: "pdf"
             },
