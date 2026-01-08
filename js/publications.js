@@ -4,7 +4,7 @@ const publicationsData = [
         icon: "fa-regular fa-newspaper", // FontAwesome icon class
         items: [
             {
-                title: "Applicability of Zone Fire Models for Tunnel Fire Modelling: Effect of Spatial Segmentation and Comparison with CFD Models",
+                title: "Applicability of zone fire models for tunnel fire modelling: Effect of spatial segmentation and comparison with CFD models",
                 authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
                 source: "Submitted",
                 link: "assets/files/2025_Dvorakova_et_al.pdf",
