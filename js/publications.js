@@ -4,6 +4,13 @@ const publicationsData = [
         icon: "fa-regular fa-newspaper", // FontAwesome icon class
         items: [
             {
+                title: "Fire safety of road tunnels with a focus on fire modelling nebo fire safety in road tunnels with an emphasis on fire modelling",
+                authors: "Moucha, P.; Benýšek, M.; Štefan, R.",
+                source: "Under preparation",
+                link: "",
+                type: "pdf"
+            },
+            {
                 title: "Applicability of zone fire models for tunnel fire modelling: Effect of spatial segmentation and comparison with CFD models",
                 authors: "Dvořáková, N.; Benýšek, M.; Štefan, R.; Novák, J.; Holan, J.",
                 source: "Submitted",
