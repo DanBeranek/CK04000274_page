@@ -4,7 +4,7 @@ const publicationsData = [
         icon: "fa-regular fa-newspaper", // FontAwesome icon class
         items: [
             {
-                title: "Fire safety of road tunnels with a focus on fire modelling nebo fire safety in road tunnels with an emphasis on fire modelling",
+                title: "Fire safety of road tunnels with a focus on fire modelling",
                 authors: "Moucha, P.; Benýšek, M.; Štefan, R.",
                 source: "Under preparation",
                 link: "",
