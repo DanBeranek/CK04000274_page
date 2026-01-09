@@ -9,7 +9,7 @@ const resultsData = [
             "Rozlišení mezi jednoduchými a pokročilými modely",
             "Praktické rady pro projektanty"
         ],
-        downloadLink: "assets/files/metodika_modelovani_pozaru.zip",
+        downloadLink: "assets/files/CK04000274-V1 Metodika pro modelování požáru v tunelech.zip",
         downloadType: "ZIP"
     },
     {
@@ -23,7 +23,7 @@ const resultsData = [
             "Licence GNU GPL (zdarma i pro komerční využití)",
             "Přesné stanovení požární odolnosti ostění"
         ],
-        downloadLink: "assets/files/software_tunel_pozar.zip",
+        downloadLink: "assets/files/CK04000274-V2 Software pro výpočet teplot v nosné konstrukci tunelu při požáru.zip",
         downloadType: "ZIP"
     },
     {
