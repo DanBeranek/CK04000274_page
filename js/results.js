@@ -10,7 +10,8 @@ const resultsData = [
             "Praktické rady pro projektanty"
         ],
         downloadLink: "assets/files/CK04000274-V1 Metodika pro modelování požáru v tunelech.zip",
-        downloadType: "ZIP"
+        downloadType: "ZIP",
+        pageLink: "vysledky/metodika-modelovani-pozaru.html"
     },
     {
         id: "CK04000274-V2",
@@ -24,7 +25,8 @@ const resultsData = [
             "Přesné stanovení požární odolnosti ostění"
         ],
         downloadLink: "assets/files/CK04000274-V2 Software pro výpočet teplot v nosné konstrukci tunelu při požáru.zip",
-        downloadType: "ZIP"
+        downloadType: "ZIP",
+        pageLink: "vysledky/software-vypocet-teplot.html"
     },
     {
         id: "CK04000274-V3",
@@ -36,7 +38,8 @@ const resultsData = [
             "Doporučené hodnoty důležitých parametrů z hlediska odolnosti betonu proti odštěpování",
             "Konkrétní ukázky vhodných receptur"
         ],
-        downloadLink: "assets/files/metodika_receptura_beton.pdf",
-        downloadType: "PDF"
+        downloadLink: "assets/files/metodika_receptura_beton.pdf",  // TODO: DOPLNIT SPRAVNY ODKAZ
+        downloadType: "PDF",
+        pageLink: "vysledky/metodika-receptura-betonu"
     }
 ];

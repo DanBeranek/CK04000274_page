@@ -444,10 +444,16 @@
                                 </ul>
                             </div>
 
-                            <div class="mt-auto">
-                                <a href="${item.downloadLink}" class="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-bold text-white bg-neutral-900 hover:bg-brand-orange rounded-xl transition-colors duration-300 shadow-sm group-hover:shadow-md">
-                                    <i class="fa-solid fa-download mr-2"></i> Stáhnout
+                            <div class="mt-auto grid grid-cols-1 lg:grid-cols-2 gap-3">
+
+                                <a href="${item.pageLink}" class="inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-white bg-brand-orange hover:bg-brand-orangeHover rounded-xl transition-colors duration-300 shadow-sm">
+                                    Detail <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                                 </a>
+
+                                <a href="${item.downloadLink}" class="inline-flex items-center justify-center px-4 py-3 text-sm font-bold text-neutral-600 bg-neutral-100 hover:bg-neutral-200 hover:text-neutral-900 rounded-xl transition-colors duration-300 border border-neutral-200">
+                                    <i class="fa-solid fa-download mr-2 text-xs"></i> ${item.downloadType}
+                                </a>
+
                             </div>
                         </div>
                     `;
