@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software pro výpočet teplot v nosné konstrukci tunelu při požáru | Tunely při požáru | Projekt CK04000274</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: {
+              dark: '#171717',    /* Neutral 900 */
+              gray: '#404040',    /* Neutral 700 */
+              light: '#fafafa',   /* Neutral 50 */
+              orange: '#ea580c',  /* Deep Orange 600 */
+              orangeHover: '#c2410c' /* Deep Orange 700 */
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(229, 229, 229, 0.6); }
+    .fade-up { animation: fadeUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #fafafa; }
+    ::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #a3a3a3; }
+  </style>
+</head>
+<body class="text-neutral-800 bg-white selection:bg-brand-orange selection:text-white">
+
+<nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <a href="../index.html#results" class="flex items-center gap-2 group">
+      <div class="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center group-hover:bg-brand-orange transition-colors duration-300">
+        <i class="fa-solid fa-arrow-left text-neutral-500 group-hover:text-white text-sm"></i>
+      </div>
+      <span class="text-sm font-bold text-neutral-600 group-hover:text-neutral-900 transition-colors">Zpět na výsledky</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-neutral-600">
+      <a href="../index.html#about" class="hover:text-brand-orange transition-colors">O projektu</a>
+      <a href="../index.html#results" class="hover:text-brand-orange transition-colors">Výsledky</a>
+      <a href="../index.html#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a>
+      <a href="../index.html#publications" class="hover:text-brand-orange transition-colors">Publikace</a>
+    </div>
+  </div>
+</nav>
+
+<!--actual content of the page starts here-->
+<header class="pt-32 pb-16 bg-brand-light border-b border-orange-100/50">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="flex items-center gap-3 mb-6">
+                <span class="px-3 py-1 bg-brand-orange text-white text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    2025
+                </span>
+      <span class="px-3 py-1 bg-white border border-orange-100 text-brand-orange text-[11px] font-bold uppercase tracking-widest rounded-full">
+                    Software (R)
+                </span>
+    </div>
+
+    <h1 class="text-3xl md:text-5xl font-bold text-neutral-900 mb-6 leading-tight max-w-4xl">
+      Software pro výpočet teplot v nosné konstrukci tunelu při požáru
+    </h1>
+
+    <div class="text-lg text-neutral-600 font-medium mb-10">
+      <span class="text-neutral-900 font-bold">Beránek, D.</span>;
+      <span>Štefan, R.</span>;
+      <span>Holan, J.</span>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-4">
+
+<!--      TODO: Nahrát PDF na server-->
+      <a href="../assets/files/manual-software-pozar-teplo.pdf" target="_blank" class="h-12 px-5 py-3 bg-neutral-900 text-white font-bold rounded-xl hover:bg-brand-orange transition-colors flex items-center gap-2 shadow-lg shadow-neutral-900/20">
+        <i class="fa-regular fa-eye"></i>
+        <span>Zobrazit PDF</span>
+      </a>
+
+<!--      TODO: Nahrát ZIP se softwarem a přílohami na server-->
+      <a href="../assets/files/CK04000274-V2 Software pro výpočet teplot v nosné konstrukci tunelu při požáru.zip" class="h-12 group px-5 py-3 bg-white border border-neutral-200 text-neutral-700 font-bold rounded-xl hover:border-brand-orange hover:text-brand-orange transition-colors flex items-center gap-2 shadow-sm">
+        <i class="fa-solid fa-file-zipper text-neutral-400 group-hover:text-brand-orange transition-colors"></i>
+        <span>Stáhnout ZIP (včetně příloh)</span>
+      </a>
+
+      <!--            TODO: Doplnit DOI po publikaci-->
+      <a href="https://doi.org/10.XXXX/XXXXX" target="_blank" class="h-12 group px-4 py-3 bg-white border border-neutral-200 hover:border-brand-orange/50 rounded-xl flex items-center gap-2 text-sm font-mono text-neutral-600 transition-colors">
+        <i class="ai ai-doi text-xl text-neutral-400 group-hover:text-brand-orange transition-colors"></i>
+        <span class="group-hover:text-brand-orange transition-colors">10.XXXX/XXXXX</span>
+        <i class="fa-solid fa-external-link-alt text-xs opacity-0 group-hover:opacity-100 transition-opacity -ml-1"></i>
+      </a>
+
+    </div>
+
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 py-16">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+    <div class="lg:col-span-8">
+      <h2 class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-6">Abstrakt</h2>
+      <div class="text-neutral-700 leading-relaxed text-lg text-justify space-y-4">
+        <p>
+          Softwarový nástroj pro stanovení rozložení teplot v nosné konstrukci tunelu. Umožňuje parametrické zadávání pro rychlé předběžné výpočty.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="lg:col-span-4 space-y-10">
+
+      <div>
+        <h3 class="text-xs font-bold text-neutral-400 uppercase tracking-widest mb-4">Klíčová slova</h3>
+        <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-neutral-50 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-100">
+                            Požár
+                        </span>
+          <span class="px-3 py-1.5 bg-neutral-50 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-100">
+                            Tunel
+                        </span>
+          <span class="px-3 py-1.5 bg-neutral-50 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-100">
+                            MKP
+                        </span>
+          <span class="px-3 py-1.5 bg-neutral-50 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-100">
+                            Software
+                        </span>
+          <span class="px-3 py-1.5 bg-neutral-50 text-neutral-600 text-xs font-bold rounded-lg border border-neutral-100">
+                            Vedení tepla
+                        </span>
+        </div>
+      </div>
+
+      <div class="bg-neutral-900 rounded-2xl p-6 text-neutral-400">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-white text-sm font-bold flex items-center gap-2">
+            <i class="fa-solid fa-quote-right text-brand-orange"></i> Citace
+          </h3>
+
+          <button onclick="copyCitation()" id="copy-btn" class="text-[10px] uppercase font-bold tracking-wider hover:text-white transition-colors flex items-center gap-1.5 py-1 px-2 rounded hover:bg-white/5">
+            <i class="fa-regular fa-copy"></i> <span>Kopírovat</span>
+          </button>
+        </div>
+
+        <div id="citation-text" class="font-mono text-[11px] bg-black/30 p-3 rounded-lg border border-neutral-800 leading-relaxed text-neutral-300 select-all">
+          Beránek, D. et al. <em>Software pro výpočet teplot v nosné konstrukci tunelu při požáru: Uživatelský manuál</em> [online]. Praha: České vysoké učení technické v Praze, 2025. DOI:
+          <!--                    TODO: doplnit DOI -->
+          <a href="https://doi.org/10.XXXX/XXXXX">https://doi.org/10.XXXX/XXXXX</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+<!--actual content of the page ends here-->
+
+
+
+<footer id="funding" class="bg-neutral-950 text-neutral-400 border-t border-neutral-900 relative overflow-hidden font-sans">
+
+  <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-orange via-orange-900 to-transparent opacity-80"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-16 lg:py-20">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
+
+      <div class="lg:col-span-3 flex flex-col items-start">
+        <a href="https://starfos.tacr.cz/projekty/CK04000274" target="_blank" rel="noopener noreferrer" class="text-white text-xl tracking-tight text-neutral-900 flex items-center gap-2 hover:text-brand-orange transition-all">
+          <div class="h-14 w-auto flex items-center justify-center text-brand-orange group-hover:bg-brand-orange group-hover:text-white transition-colors duration-300">
+            <i class="fa-fire fa-solid text-4xl"></i>
+          </div>
+          <div class="flex flex-col">
+            CK04000274
+            <span class="font-bold">Tunely při požáru</span>
+          </div>
+        </a>
+
+        <p class="text-sm text-neutral-500 leading-relaxed mb-6 max-w-sm">
+          Výzkum a vývoj inovativních metod a materiálů pro navrhování tunelových staveb z hlediska požární bezpečnosti.
+        </p>
+      </div>
+
+      <div class="lg:col-span-2">
+        <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Menu</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="../index.html#about" class="hover:text-brand-orange transition-colors">O projektu</a></li>
+          <li><a href="../index.html#results" class="hover:text-brand-orange transition-colors">Výsledky</a></li>
+          <li><a href="../index.html#team" class="hover:text-brand-orange transition-colors">Řešitelský tým</a></li>
+          <li><a href="../index.html#publications" class="hover:text-brand-orange transition-colors">Publikace</a></li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-3">
+        <h4 class="text-white text-sm font-bold uppercase tracking-widest mb-6">
+          Kontakt
+        </h4>
+
+        <ul class="space-y-2 text-sm">
+          <li class="flex items-start gap-3">
+            <div class="w-5 flex justify-center">
+              <i class="fa-solid fa-user mt-1 text-neutral-600"></i>
+            </div>
+            <div>
+              <a href="https://people.fsv.cvut.cz/~stefarad/" target="_blank" rel="noopener noreferrer" class="text-white block hover:text-brand-orange transition-colors duration-300">
+                <strong>Radek Štefan</strong>
+              </a>
+              <span class="inline-block">
+    <a href="https://www.cvut.cz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-300">ČVUT v Praze</a>,
+    <a href="https://www.fsv.cvut.cz/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors duration-300">Fakulta stavební</a>,
+</span>
+
+              <a href="https://concrete.fsv.cvut.cz/" target="_blank" rel="noopener noreferrer" class="block hover:text-brand-orange transition-colors duration-300">
+                Katedra betonových a zděných konstrukcí
+              </a>
+            </div>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <div class="w-5 flex justify-center">
+              <i class="fa-solid fa-location-dot mt-1 text-neutral-600"></i>
+            </div>
+            <div class="text-neutral-300">
+              Thákurova 7, 166 29 Praha 6
+              <span class="block text-neutral-500 text-xs mt-0.5">Místnost B 736</span>
+            </div>
+          </li>
+
+          <li class="flex items-center gap-3">
+            <div class="w-5 flex justify-center">
+              <i class="fa-solid fa-envelope text-neutral-600"></i>
+            </div>
+            <a href="mailto:radek.stefan@fsv.cvut.cz" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+              radek.stefan@fsv.cvut.cz
+            </a>
+          </li>
+
+          <li class="flex items-center gap-3">
+            <div class="w-5 flex justify-center">
+              <i class="fa-solid fa-mobile-screen text-neutral-600"></i>
+            </div>
+            <a href="tel:+420775195659" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+              +420 775 195 659
+            </a>
+          </li>
+
+          <li class="flex items-center gap-3">
+            <div class="w-5 flex justify-center">
+              <i class="fa-solid fa-phone text-neutral-600"></i>
+            </div>
+            <a href="tel:+420224354450" class="text-neutral-300 hover:text-brand-orange transition-colors duration-300">
+              +420 224 354 450
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="lg:col-span-4">
+        <div class="bg-neutral-900/30 border border-neutral-800 p-6 rounded-2xl relative hover:border-brand-orange/30 transition-colors">
+          <div class="absolute -top-3 left-4 bg-neutral-950 px-2 text-[10px] font-bold uppercase tracking-widest text-brand-orange">
+            Financování
+          </div>
+
+          <div class="flex items-center gap-4">
+
+            <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="shrink-0 block">
+              <div class="w-16 h-auto p-1.5 rounded-md">
+                <img src="../assets/img/logos/tacr_white.svg" alt="TAČR" class="w-full h-auto">
+              </div>
+            </a>
+
+            <p class="text-sm text-neutral-300 leading-relaxed font-medium">
+              Tento projekt byl financován se státní podporou
+              <a href="https://www.tacr.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange underline decoration-neutral-700 underline-offset-4 hover:decoration-brand-orange transition-all">
+                Technologické agentury ČR
+              </a>
+              a
+              <a href="https://www.mdcr.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange underline decoration-neutral-700 underline-offset-4 hover:decoration-brand-orange transition-all">
+                Ministerstva dopravy ČR
+              </a>
+              v rámci
+              <a href="https://tacr.gov.cz/program/program-doprava-2020/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange underline decoration-neutral-700 underline-offset-4 hover:decoration-brand-orange transition-all">
+                Programu DOPRAVA 2020+
+              </a>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-16 pt-8 border-t border-neutral-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium text-neutral-600">
+      <p>
+        &copy; <span id="current-year"></span>
+        <a href="https://www.fsv.cvut.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+          České vysoké učení technické v Praze
+        </a>.
+      </p>
+      <div class="flex gap-6">
+        <a href="https://www.fbi.vsb.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+          VŠB-TUO
+        </a>
+        <a href="https://www.valbek.cz" target="_blank" rel="noopener noreferrer" class="hover:text-brand-orange transition-colors">
+          Valbek, spol. s .r.o.
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function copyCitation() {
+    // 1. Get the text
+    const textToCopy = document.getElementById('citation-text').innerText;
+    const btn = document.getElementById('copy-btn');
+    const originalContent = btn.innerHTML;
+
+    // 2. Copy to clipboard
+    navigator.clipboard.writeText(textToCopy).then(() => {
+
+      // 3. Visual Feedback (Change icon to Checkmark)
+      btn.innerHTML = '<i class="fa-solid fa-check text-brand-orange"></i> <span class="text-brand-orange">Zkopírováno</span>';
+
+      // 4. Reset back after 2 seconds
+      setTimeout(() => {
+        btn.innerHTML = originalContent;
+      }, 2000);
+
+    }).catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+  }
+</script>
+</body>
+</html>

@@ -26,7 +26,7 @@ const resultsData = [
         ],
         downloadLink: "assets/files/CK04000274-V2 Software pro výpočet teplot v nosné konstrukci tunelu při požáru.zip",
         downloadType: "ZIP",
-        pageLink: "vysledky/software-vypocet-teplot.html"
+        pageLink: "vysledky/software-vypocet-teplot-v-nosne-konstrukci-tunelu.html"
     },
     {
         id: "CK04000274-V3",
@@ -40,6 +40,6 @@ const resultsData = [
         ],
         downloadLink: "assets/files/metodika_receptura_beton.pdf",  // TODO: DOPLNIT SPRAVNY ODKAZ
         downloadType: "PDF",
-        pageLink: "vysledky/metodika-receptura-betonu"
+        pageLink: "vysledky/metodika-navrh-receptury-betonu.html"
     }
 ];
