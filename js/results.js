@@ -39,7 +39,7 @@ const resultsData = [
             "Konkrétní ukázky vhodných receptur"
         ],
         downloadLink: "assets/files/metodika_receptura_beton.pdf",  // TODO: DOPLNIT SPRAVNY ODKAZ
-        downloadType: "PDF",
+        downloadType: "PDF", // TODO: DOPLNIT SPRAVNY TYP ("PDF" NEBO "ZIP")
         pageLink: "vysledky/metodika-navrh-receptury-betonu.html"
     }
 ];
