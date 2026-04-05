@@ -19,8 +19,8 @@ const publicationsData = [
                 type: "pdf"
             },
             {
-                title: "Novel indicative small-scale screening method for assessing fire-induced spalling propensity of concrete under uniaxial compression and restrained in-plane deformation",
-                authors: "Chylík, R.; Štefan, R.; Holan, J.; Fládr J.",
+                title: "Indicative screening method for assessing fire-induced spalling propensity of concrete under uniaxial compression and restrained in-plane deformation",
+                authors: "Chylík, R.; Štefan, R.; Holan, J.; Fládr J.; Trtík, T.",
                 source: "Submitted",
                 link: "",
                 type: "pdf"
@@ -38,6 +38,14 @@ const publicationsData = [
         category: "Konferenční příspěvky",
         icon: "fa-solid fa-users-rectangle",
         items: [
+            {
+                title: "Fire resistance of tunnel concrete – Indicative testing of spalling prevention",
+                authors: "Huňka, P.; Fládr. J.; Štefan, R.",
+                source: "fib Congress 2026, Lisbon, Portugal, 2026. Submitted",
+                link: "",
+                type: "pdf"
+            },
+
             {
                 title: "Požární bezpečnost silničních tunelů se zaměřením na modelování požáru",
                 authors: "Moucha, P.",
@@ -115,6 +123,13 @@ const publicationsData = [
                 type: "link"
             },
             {
+                title: "Experimentální měření pórového tlaku v betonu vystaveném vysokým teplotám",
+                authors: "Chylík, R.",
+                source: "Disertační práce. Školitel: J. Vašková, J. Fládr, R. Štefan. ČVUT v Praze, 2024.",
+                link: "http://hdl.handle.net/10467/118562",
+                type: "link"
+            },
+            {
                 title: "Modelování požáru v tunelech pomocí zjednodušených a zpřesněných modelů požáru",
                 authors: "Hlaváček, M.",
                 source: "Diplomová práce. Vedoucí M. Benýšek. ČVUT v Praze, 2024.",
@@ -126,13 +141,6 @@ const publicationsData = [
                 authors: "Hnyk, M.",
                 source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2024.",
                 link: "https://dspace.cvut.cz/entities/publication/1955c45a-6508-4f34-bd7c-13c00230afb8",
-                type: "link"
-            },
-            {
-                title: "Modelování požáru a analýza elektrovozidel při návrhu konstrukcí",
-                authors: "Bělohradská, T.",
-                source: "Diplomová práce. Vedoucí M. Benýšek. ČVUT v Praze, 2023.",
-                link: "https://dspace.cvut.cz/entities/publication/04f39a9d-2068-4558-bb8e-158b5331a7d4",
                 type: "link"
             },
         ]
