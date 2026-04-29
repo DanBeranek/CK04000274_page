@@ -39,6 +39,26 @@ const publicationsData = [
         icon: "fa-solid fa-users-rectangle",
         items: [
             {
+                title: "Výpočetní nástroj pro teplotní analýzu tunelových konstrukcí při požáru",
+                authors: "Beránek, D.",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2026. Praha: CTU FCE, 2026.",
+                // link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2025/pdf/Moucha_Pavel.pdf",
+                // type: "link"
+                link: "assets/files/Beranek_Daniel_2026.pdf",
+                type: "pdf"
+            },
+
+            {
+                title: "Požární bezpečnost silničních tunelů se zaměřením na modelování požáru",
+                authors: "Moucha, P.",
+                source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2026. Praha: CTU FCE, 2026.",
+                // link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2025/pdf/Moucha_Pavel.pdf",
+                // type: "link"
+                link: "assets/files/Moucha_Pavel_2026.pdf",
+                type: "pdf"
+            },
+
+            {
                 title: "Fire resistance of tunnel concrete – Indicative testing of spalling prevention",
                 authors: "Huňka, P.; Fládr. J.; Štefan, R.",
                 source: "fib Congress 2026, Lisbon, Portugal, 2026. Submitted",
@@ -52,7 +72,7 @@ const publicationsData = [
                 source: "Proceedings of PhD Workshop, Department of Concrete and Masonry Structures 2025. Praha: CTU FCE, 2025. p. 68-72. ISBN 978-80-01-07416-9.",
                 // link: "https://concrete.fsv.cvut.cz/phdworkshop/proceedings/2025/pdf/Moucha_Pavel.pdf",
                 // type: "link"
-                link: "assets/files/Moucha_Pavel.pdf",
+                link: "assets/files/Moucha_Pavel_2025.pdf",
                 type: "pdf"
             },
 
@@ -98,8 +118,8 @@ const publicationsData = [
                 title: "Experimentální a numerická analýza různých druhů betonu tunelových ostění vystavených požáru",
                 authors: "Lisová, A.",
                 source: "Diplomová práce. Vedoucí R. Štefan. ČVUT v Praze, 2026.",
-                link: "assets/files/2026_Lisova.pdf",
-                type: "pdf"
+                link: "https://dspace.cvut.cz/entities/publication/2723b06a-f9a4-462a-bdab-d1cf9dfd4071",
+                type: "link"
             },
             {
                 title: "Analýza chování betonu pro tunelová ostění za vysokých teplot",
